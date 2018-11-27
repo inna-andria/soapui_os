@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="29a98265-71af-448b-8368-a620d929ded0" activeEnvironment="Default" name="My first SoapUI Project from Sanketh" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" encryptionMode="Not encrypted" updated="2.3.0 2018-03-06T16:28:42Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="Driver"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Program Files (x86)\Jenkins\workspace\Soapui OS\reports"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.LoadTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Print Report Statistics" value="true"/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Report to Generate" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="LoadTest" value="LoadTest 1"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="ThreadCount" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="LoadTest 1"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\SoapUI-5.4.0/bin"/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Limit" value=""/>
+  <con:entry key="Root Folder" value="C:\soapui\load test results"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+    <con:setting id="Port">8091</con:setting>
+    <con:setting id="Set endpoint for HTTP Tunnel:">http://localhost:8090</con:setting>
+    <con:setting id="HTTP tunnel - KeyStore"/>
+    <con:setting id="HTTP tunnel - Password"/>
+    <con:setting id="HTTP tunnel - KeyPassword"/>
+    <con:setting id="HTTP tunnel - TrustStore"/>
+    <con:setting id="HTTP tunnel - TrustStore Password"/>
+    <con:setting id="Reuse request state">false</con:setting>
+    <con:setting id="HTTP tunnel - Set SSL Client Key Store path"/>
+    <con:setting id="Content types to monitor">*/html, */xml, */soap+xml, */json, */x-json, */javascript, */x-amf, */http</con:setting>
+    <con:setting id="HTTP tunnel - Set SSL Client Key Store Password"/>
+    <con:setting id="Max Log">100</con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="43c1796a-c888-4cdc-beeb-571a3832a981" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://maps.googleapis.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://maps.googleapis.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Json" path="/maps/api/geocode/{type}" id="ab9437d1-d3a1-4b9e-9168-b4e6f6394a86">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>address</con:name>
+          <con:value>melbourne</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>melbourne</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>type</con:name>
+          <con:value>json</con:value>
+          <con:style>TEMPLATE</con:style>
+          <con:default>json</con:default>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Json 1" id="320bb7d1-d0c2-4d47-8332-463962f43935" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:json="http://maps.googleapis.com/maps/api/geocode/json">json:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml; charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>GeocodeResponse</con:element>
+        </con:representation>
+        <con:request name="API req for address" id="3bdd8a99-e068-45c4-a684-a3ee3832e971" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://maps.googleapis.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://maps.googleapis.com/maps/api/geocode/json</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="address" value="melbourne" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>address</con:entry>
+            <con:entry>type</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="ba2e6f9a-a975-47e0-9028-7643aed36b07" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://maps.googleapis.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://maps.googleapis.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Json" path="/maps/api/geocode/json" id="34dc6bbc-f31b-4118-a89c-b15c8e824ced">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>latlng</con:name>
+          <con:value>-37.8136276,144.9630576</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>-37.8136276,144.9630576</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Json 1" id="1a46a48a-62db-444e-897f-3af17e953ebb" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:json="http://maps.googleapis.com/maps/api/geocode/json">json:Response</con:element>
+        </con:representation>
+        <con:request name="API req for latlng" id="135ecc12-de97-4efa-adf4-fa4a58fa932a" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://maps.googleapis.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://maps.googleapis.com/maps/api/geocode/json</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="latlng" value="-37.8136276,144.9630576" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>latlng</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="87f4c895-dcd8-44d5-9770-48a90b178454" name="TestSuite 1">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="a8562717-3455-492a-8554-1a3b13a1ce8c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Driver" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="Runner" id="ed81d44d-1667-4740-941d-4aa39a09bd86">
+        <con:settings/>
+        <con:config>
+          <script>import jxl.*
+
+Workbook workbook = Workbook.getWorkbook(new File("C:\\Soapui\\data.xls"))
+
+for(i=1 ; i&lt;=2; i++){
+	log.info(i);
+	city = workbook.getSheet(0).getCell(0,i).getContents()
+	log.info city
+	state = workbook.getSheet(0).getCell(1,i).getContents()
+	log.info state
+	log.info "********Start of Iteration ***********"
+
+
+	
+//testRunner.testCase.setPropertyValue("city", city)
+//testRunner.testCase.setPropertyValue("state", state)
+def project = testRunner.testCase.testSuite.project
+def prop1 = project.testSuites['TestSuite 1'].testCases['TestCase 1'].setPropertyValue("city", city)
+def prop2 = project.testSuites['TestSuite 1'].testCases['TestCase 1'].setPropertyValue("state", state)
+def runner = project.testSuites['TestSuite 1'].testCases['TestCase 1'].run( null, true )
+runner.waitUntilFinished()
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="a4525f9e-3187-4ca6-b8af-ad1b7dfa53e2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Request for State" id="e30e5fab-9df4-4e4d-bce2-256c6e0f8b69">
+        <con:settings/>
+        <con:config service="http://maps.googleapis.com" resourcePath="/maps/api/geocode/{type}" methodName="Json 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request for State" id="3bdd8a99-e068-45c4-a684-a3ee3832e971" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://maps.googleapis.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://maps.googleapis.com/maps/api/geocode/json</con:originalUri>
+            <con:assertion type="JsonPath Match" id="c2f97650-cc62-422d-a748-781f92c10186" name="Verify if the Statename is correct.">
+              <con:configuration>
+                <path>$.results[0].address_components[1].long_name</path>
+                <content>${#TestCase#state}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="e1f9a5c8-0431-4f9f-b637-dd4284a59cbc" name="Verify the Country name">
+              <con:configuration>
+                <token>Australia</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="83c61a75-c204-49e0-a0e5-554f92c1bdea" name="Verify invalid value not part of the JSON">
+              <con:configuration>
+                <token>Australiaa</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Invalid HTTP Status Codes" id="af63df23-6585-4374-b86b-d4bd4c03e379" name="Invalid HTTP Status Codes">
+              <con:configuration>
+                <codes>501</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="83386c09-2b80-477d-be98-cca966551d27" name="Response in less than 2 seconds">
+              <con:configuration>
+                <SLA>2000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="7cafe402-1ebf-4aaf-a90a-5bf35e801d60" name="Script Assertion">
+              <con:configuration>
+                <scriptText>import groovy.json.JsonSlurper 
+def response = messageExchange.response.responseContent
+def slurper = new JsonSlurper()
+def json = slurper.parseText response
+
+
+
+assert json.results[0].address_components[1].long_name == context.expand('${#TestCase#State}')</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="address" value="${#TestCase#city}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>address</con:entry>
+              <con:entry>type</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="Property Transfer" id="396b89c1-c974-4c5c-9d81-250484ca98f1">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>lat</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>Request for State</con:sourceStep>
+            <con:sourcePath>$.results[0].geometry.location.lat</con:sourcePath>
+            <con:targetType>lat</con:targetType>
+            <con:targetStep>Properties</con:targetStep>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>lng</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>Request for State</con:sourceStep>
+            <con:sourcePath>$.results[0].geometry.location.lng</con:sourcePath>
+            <con:targetType>lng</con:targetType>
+            <con:targetStep>Properties</con:targetStep>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="Properties" id="5378d527-1dae-4ebc-acc7-653b24804f72">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>lat</con:name>
+              <con:value>-33.8688197</con:value>
+            </con:property>
+            <con:property>
+              <con:name>lng</con:name>
+              <con:value>151.2092955</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Request for latlng" id="fefa331e-68e2-4424-a091-668e6d9a8a4b">
+        <con:settings/>
+        <con:config service="http://maps.googleapis.com" resourcePath="/maps/api/geocode/json" methodName="Json 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request for latlng" id="135ecc12-de97-4efa-adf4-fa4a58fa932a" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://maps.googleapis.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://maps.googleapis.com/maps/api/geocode/json</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="latlng" value="${Properties#lat},${Properties#lng}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>latlng</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>city</con:name>
+          <con:value>Sydney</con:value>
+        </con:property>
+        <con:property>
+          <con:name>state</con:name>
+          <con:value>New South Wales</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="04bc96ce-2160-480c-9274-5b987514a0a9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="LoadTest 1" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Request for State" id="4bcf5b7d-416f-474e-ad1f-c7219a847526">
+        <con:settings/>
+        <con:config service="http://maps.googleapis.com" resourcePath="/maps/api/geocode/{type}" methodName="Json 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request for State" id="3bdd8a99-e068-45c4-a684-a3ee3832e971" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://maps.googleapis.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://maps.googleapis.com/maps/api/geocode/json</con:originalUri>
+            <con:assertion type="JsonPath Match" id="c2f97650-cc62-422d-a748-781f92c10186" name="Verify if the Statename is correct.">
+              <con:configuration>
+                <path>$.results[0].address_components[1].long_name</path>
+                <content>${#TestCase#state}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="e1f9a5c8-0431-4f9f-b637-dd4284a59cbc" name="Verify the Country name">
+              <con:configuration>
+                <token>Australia</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="83c61a75-c204-49e0-a0e5-554f92c1bdea" name="Verify invalid value not part of the JSON">
+              <con:configuration>
+                <token>Australiaa</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Invalid HTTP Status Codes" id="af63df23-6585-4374-b86b-d4bd4c03e379" name="Invalid HTTP Status Codes">
+              <con:configuration>
+                <codes>501</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="83386c09-2b80-477d-be98-cca966551d27" name="Response in less than 2 seconds">
+              <con:configuration>
+                <SLA>2000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="7cafe402-1ebf-4aaf-a90a-5bf35e801d60" name="Script Assertion">
+              <con:configuration>
+                <scriptText>import groovy.json.JsonSlurper 
+def response = messageExchange.response.responseContent
+def slurper = new JsonSlurper()
+def json = slurper.parseText response
+
+
+
+assert json.results[0].address_components[1].long_name == context.expand('${#TestCase#State}')</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="address" value="${#TestCase#city}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>address</con:entry>
+              <con:entry>type</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="Properties" id="5da198f7-3b6b-4b09-920c-422c3737c8d9">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>lat</con:name>
+              <con:value>-33.8688197</con:value>
+            </con:property>
+            <con:property>
+              <con:name>lng</con:name>
+              <con:value>151.2092955</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Request for latlng" id="96484f7e-4651-48e6-8f68-d52dcb1a54ff">
+        <con:settings/>
+        <con:config service="http://maps.googleapis.com" resourcePath="/maps/api/geocode/json" methodName="Json 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request for latlng" id="135ecc12-de97-4efa-adf4-fa4a58fa932a" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://maps.googleapis.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://maps.googleapis.com/maps/api/geocode/json</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="latlng" value="${Properties#lat},${Properties#lng}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>latlng</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:loadTest id="a5a890f6-4902-431b-a689-f8c3faeb8ba1" name="LoadTest 1">
+        <con:settings>
+          <con:setting id="hasBeenConvertedToLoadUITest">true</con:setting>
+          <con:setting id="HttpSettings@close-connections">false</con:setting>
+        </con:settings>
+        <con:threadCount>5</con:threadCount>
+        <con:startDelay>0</con:startDelay>
+        <con:sampleInterval>250</con:sampleInterval>
+        <con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed>
+        <con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange>
+        <con:historyLimit>-1</con:historyLimit>
+        <con:testLimit>30</con:testLimit>
+        <con:limitType>TIME</con:limitType>
+        <con:loadStrategy>
+          <con:type>Simple</con:type>
+          <con:config>
+            <testDelay>3000</testDelay>
+            <randomFactor>0.5</randomFactor>
+          </con:config>
+        </con:loadStrategy>
+        <con:assertion type="Step TPS" name="Step TPS">
+          <con:configuration>
+            <name>Step TPS</name>
+            <min-requests>100</min-requests>
+            <min-value>10</min-value>
+            <test-step>- Any -</test-step>
+            <max-errors>-1</max-errors>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Max Errors" name="Max Errors">
+          <con:configuration>
+            <name>Max Errors</name>
+            <max-absolute-errors>100</max-absolute-errors>
+            <max-relative-errors>0.5</max-relative-errors>
+            <test-step>- Any -</test-step>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Step Average" name="Step Average">
+          <con:configuration>
+            <name>Step Average</name>
+            <min-requests>100</min-requests>
+            <max-average>1000</max-average>
+            <test-step>- Any -</test-step>
+            <max-errors>-1</max-errors>
+            <sample-interval>20</sample-interval>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Step Maximum" name="Step Maximum">
+          <con:configuration>
+            <name>Step Maximum</name>
+            <min-requests>100</min-requests>
+            <max-value>2000</max-value>
+            <test-step>- Any -</test-step>
+            <max-errors>-1</max-errors>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Step Status" name="Step Status">
+          <con:configuration>
+            <name>Step Status</name>
+            <min-requests>100</min-requests>
+            <test-step>- Any -</test-step>
+            <max-errors>-1</max-errors>
+          </con:configuration>
+        </con:assertion>
+        <con:maxAssertionErrors>100</con:maxAssertionErrors>
+        <con:statisticsLogFolder/>
+        <con:statisticsLogInterval>0</con:statisticsLogInterval>
+        <con:logStatisticsOnThreadChange>false</con:logStatisticsOnThreadChange>
+        <con:cancelOnReachedLimit>false</con:cancelOnReachedLimit>
+        <con:cancelExcessiveThreads>true</con:cancelExcessiveThreads>
+        <con:strategyInterval>500</con:strategyInterval>
+        <con:setupScript>log.info "I am in setup"</con:setupScript>
+        <con:tearDownScript>log.info "I am in TearDown"</con:tearDownScript>
+        <con:updateStatisticsPerTestStep>false</con:updateStatisticsPerTestStep>
+        <con:reportParameters/>
+      </con:loadTest>
+      <con:properties>
+        <con:property>
+          <con:name>city</con:name>
+          <con:value>Sydney</con:value>
+        </con:property>
+        <con:property>
+          <con:name>state</con:name>
+          <con:value>New South Wales</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+      <con:securityTest id="95179dbe-70d2-46d8-9d38-a668c424a37b" name="SecurityTest 1" failOnError="true" testCaseId="04bc96ce-2160-480c-9274-5b987514a0a9">
+        <con:settings/>
+        <con:properties/>
+        <con:reportParameters/>
+      </con:securityTest>
+    </con:testCase>
+    <con:testCase id="eea6e83d-a908-496a-8e06-887b9a8b316e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Groovy" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="Groovy Script - variables" id="0bda4bf9-9dd4-458a-a4f6-7ae3287a5e08">
+        <con:settings/>
+        <con:config>
+          <script>// Defining variables &amp; printing them
+
+//integer
+int var1 = 5;
+log.info "The variable value is : "+ var1
+
+//string
+String name = "Sanketh"
+log.info "My name is : "+ name
+
+//float
+float var2 = 5.5
+log.info var2
+
+//arrays
+def myArray = new String[2]
+myArray[0] = "A"
+myArray[1] = "B"
+
+log.info "*****************************Array output****************************"
+log.info myArray[0]
+log.info myArray[1]
+log.info myArray.length
+log.info "Minimum value in array : " + myArray.min()
+log.info "Maximum value in array : " + myArray.max()</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - loops" id="f23aa9a2-c8a7-4fe5-abba-22957f975807">
+        <con:settings/>
+        <con:config>
+          <script>def fileName = "test1.txt"
+// Defining a file handler/pointer to handle the file.
+def inputFile = new File("C:\\"+fileName)
+// Check if a file with same name exisits in the folder.
+if(inputFile.exists())
+{
+ // if a file exisits then it will print the message to the log.
+ log.info("A file named " + fileName + " already exisits in the same folder")
+}
+else
+{
+ //else it will create a file and write the text "Hello World !"
+ inputFile.write("Hello World !")
+
+
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - conditions" id="2fc1f999-f4e3-48c2-8b77-18486ebde6a3">
+        <con:settings/>
+        <con:config>
+          <script>int num1 = 5
+String str1 = '5'
+
+//if(num1 &lt; 100){
+//	log.info "The number is less than 100. The number you entered is - "+ num1
+//}else if(num1 == 100){
+//	log.info "The number is equal to 100. The number you entered is - "+ num1
+//}else{
+//	log.info "The number is more than 100. The number you entered is - "+ num1
+//}
+
+if(num1 == str1.toInteger()){
+	log.info "The numbers are equal. Your number is : "+num1
+}else{
+	log.info "The numbers are not equal. Your num1 is : "+num1 +" ,num2 :"+str1
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - filesystem" id="09e54acb-0b2c-45a4-acc7-44e333e923c2">
+        <con:settings/>
+        <con:config>
+          <script>//Reading from file
+File file = new File("C:/soapui/groovy/soapui.txt")
+//log.info "**************Here is the file content**************"
+//log.info file.text
+//log.info "**************Above is the file content**************"
+//log.info ""
+//log.info ""
+def lines = file.readLines()
+//log.info lines[0]
+//log.info lines[1]
+maxlines = lines.size()-1
+for(i=0; i&lt;= maxlines;i++){
+	log.info lines[i]
+}
+
+//Create a file &amp; then write some data
+def fileName = "mysoapui.txt"
+def inputFile = new File("C:\\soapui\\groovy\\"+ fileName)
+if(inputFile.exists()){
+	log.warn "File already exists.Nothing created !"
+	def now = new Date()
+	inputFile.append("\n"+ now +"We love Soapui again!\n")
+}else{
+	inputFile.write("We love Soapui!")
+}
+
+def subdir = new File("C:/soapui/groovy/fromSoapui")
+created = subdir.mkdir()
+log.info created</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - additional" id="1d363fac-9cb7-478b-b276-746be4dbda41">
+        <con:settings/>
+        <con:config>
+          <script>log.info "I am from info"
+
+log.warn "I am from warn"
+
+log.error "I am from error"</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:restMockService id="55fe29d5-fd81-4725-8d11-5d739479bd18" port="8090" path="/" host="localhost" name="REST MockService 1" docroot="">
+    <con:settings/>
+    <con:properties/>
+    <con:headerValidator/>
+    <con:restMockAction name="sessionid" method="GET" resourcePath="/sessionid" id="616112f2-f507-4773-933f-4a0452bf29b0">
+      <con:settings/>
+      <con:defaultResponse>Response 1</con:defaultResponse>
+      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:dispatchXPath/>
+      <con:routeScript/>
+      <con:response name="Response 1" id="8c43ea61-0d24-4236-a7bf-7920fc526a36" httpResponseStatus="200" mediaType="application/json" dataSource="">
+        <con:settings/>
+        <con:script>def val = ((Math.random() + 1) * 100000)
+def num = val.toInteger()
+context.setProperty("Id",num)</con:script>
+        <con:responseContent>{
+	"SessionId" : "${Id}"
+}</con:responseContent>
+      </con:response>
+    </con:restMockAction>
+  </con:restMockService>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:sensitiveInformation/>
+  <con:authRepository/>
+  <con:loadUiTest name="LoadTest 1" id="595b93c2-f239-4073-bdf9-1a3cfd5406b6">
+    <con:settings>
+      <con:setting id="soapUIObjectSourceId">04bc96ce-2160-480c-9274-5b987514a0a9</con:setting>
+      <con:setting id="convertedFromLoadTestModelItemId">a5a890f6-4902-431b-a689-f8c3faeb8ba1</con:setting>
+    </con:settings>
+    <con1:loadui-project id="d40482e2-4b3e-4ce4-9c5f-6e7bd0798aea" label="LoadTest 1" xmlns:con1="http://eviware.com/loadui/config">
+      <con1:properties>
+        <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+        <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
+        <con1:property propagates="true" key="ModelItem.saveReport" type="java.lang.Boolean">false</con1:property>
+        <con1:property propagates="true" key="ModelItem.reportFolder" type="java.lang.String"/>
+        <con1:property propagates="true" key="ModelItem.reportFormat" type="java.lang.String"/>
+        <con1:property propagates="true" key="Temporary project" type="java.lang.String"/>
+        <con1:property propagates="true" key="ModelItem.rate" type="java.lang.Long">10</con1:property>
+        <con1:property propagates="true" key="ModelItem.loadDistributionType" type="com.smartbear.load.facade.LoadDistributionType">PerScenario</con1:property>
+        <con1:property propagates="true" key="ModelItem.remoteMode" type="java.lang.String"/>
+      </con1:properties>
+      <con1:attributes>
+        <con1:property key="limits">Time=30;</con1:property>
+      </con1:attributes>
+      <con1:addons/>
+      <con1:scene label="New Scenario" id="a9836821-1b1b-46d9-bde8-04ab7eab29af" version="1">
+        <con1:properties>
+          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+          <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
+          <con1:property propagates="true" key="SceneItem.followProject" type="java.lang.Boolean">true</con1:property>
+          <con1:property propagates="true" key="SceneItem.scenarioRatePercentage" type="java.lang.Long">100</con1:property>
+          <con1:property propagates="true" key="SceneItem.scenarioRateSpecific" type="java.lang.Long">10</con1:property>
+          <con1:property propagates="true" key="ModelItem.samplerOutputLevel" type="com.eviware.loadui.api.component.SoapUISamplerOutputLevel">TestCaseAndAllTestSteps</con1:property>
+        </con1:properties>
+        <con1:attributes>
+          <con1:property key="limits">Time=30;</con1:property>
+        </con1:attributes>
+        <con1:addons>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="04109e93-2451-49a4-a057-43038e6c2274">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAClBFUl9TRUNPTkR0AB9SZXF1ZXN0IGZvciBTdGF0ZTogVHJhbnNhY3Rpb25z</con1:property>
+              <con1:property key="Labeled@label">Step TPS</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cEHf////wAAAQCQAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="dc4cba8a-f84d-4303-b2b1-52d4e8ef3bd9">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAClBFUl9TRUNPTkR0ABxQcm9wZXJ0aWVzICgyKTogVHJhbnNhY3Rpb25z</con1:property>
+              <con1:property key="Labeled@label">Step TPS</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cEHf////wAAAQCQAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="07e3a8ac-a72b-46da-8b19-75481e247817">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAClBFUl9TRUNPTkR0ACBSZXF1ZXN0IGZvciBsYXRsbmc6IFRyYW5zYWN0aW9ucw==</con1:property>
+              <con1:property key="Labeled@label">Step TPS</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cEHf////wAAAQCQAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="9ab3dbac-1594-4538-8d7a-c09c2da0dbf1">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQABVRPVEFMdAAZUmVxdWVzdCBmb3IgU3RhdGU6IEZhaWxlZA==</con1:property>
+              <con1:property key="Labeled@label">Max Errors</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cEBZAAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="a2a07968-5d65-40b9-9301-9999d1917ffa">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQABVRPVEFMdAAWUHJvcGVydGllcyAoMik6IEZhaWxlZA==</con1:property>
+              <con1:property key="Labeled@label">Max Errors</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cEBZAAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="e9c24851-4e25-4711-964b-22323067502d">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQABVRPVEFMdAAaUmVxdWVzdCBmb3IgbGF0bG5nOiBGYWlsZWQ=</con1:property>
+              <con1:property key="Labeled@label">Max Errors</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cEBZAAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="1ba0419e-d64d-4655-bf34-3b59ccb64ce5">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAB0FWRVJBR0V0ABxSZXF1ZXN0IGZvciBTdGF0ZTogVGltZVRha2Vu</con1:property>
+              <con1:property key="Labeled@label">Step Average</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cECPQAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="01893f95-482b-4daa-9e57-5e9d6775718a">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAB0FWRVJBR0V0ABlQcm9wZXJ0aWVzICgyKTogVGltZVRha2Vu</con1:property>
+              <con1:property key="Labeled@label">Step Average</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cECPQAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="5b24a81d-3f99-45c3-8e1c-cb8f3c11aa64">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAB0FWRVJBR0V0AB1SZXF1ZXN0IGZvciBsYXRsbmc6IFRpbWVUYWtlbg==</con1:property>
+              <con1:property key="Labeled@label">Step Average</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cECPQAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="95aaeceb-90b4-4de4-9ff5-4501f81d195b">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAA01BWHQAHFJlcXVlc3QgZm9yIFN0YXRlOiBUaW1lVGFrZW4=</con1:property>
+              <con1:property key="Labeled@label">Step Maximum</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cECfQAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="3333a8a5-cdf1-4f32-bfe5-097a82836a31">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAA01BWHQAGVByb3BlcnRpZXMgKDIpOiBUaW1lVGFrZW4=</con1:property>
+              <con1:property key="Labeled@label">Step Maximum</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cECfQAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+          <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="6f31193a-d87b-41c5-8e4d-dc73b2d4a413">
+            <con1:attributes>
+              <con1:property key="parentId">67975b44-9c66-4ceb-9a06-638e42a343f4</con1:property>
+              <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkNjc5NzViNDQtOWM2Ni00Y2ViLTlhMDYtNjM4ZTQyYTM0M2Y0dAAEbWFpbnQAA01BWHQAHVJlcXVlc3QgZm9yIGxhdGxuZzogVGltZVRha2Vu</con1:property>
+              <con1:property key="Labeled@label">Step Maximum</con1:property>
+              <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cECfQAAAAAAAAAAAAAAAAAA=</con1:property>
+              <con1:property key="tolerancePeriod">0</con1:property>
+              <con1:property key="toleranceAllowedOccurrences">0</con1:property>
+              <con1:property key="stopTestOnFailure">true</con1:property>
+            </con1:attributes>
+            <con1:addons/>
+          </con1:addon>
+        </con1:addons>
+        <con1:component type="com.eviware.loadui.impl.component.IntervalComponent" label="Interval 1" id="6a09d75d-9ad8-4a7d-83da-edbc23abd3d9" category="Scheduler">
+          <con1:properties>
+            <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+            <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
+            <con1:property propagates="true" key="startAt" type="java.lang.Long">0</con1:property>
+            <con1:property propagates="true" key="duration" type="java.lang.Long">5</con1:property>
+            <con1:property propagates="true" key="unit" type="java.lang.String">Sec</con1:property>
+            <con1:property propagates="true" key="mode" type="java.lang.String">Single</con1:property>
+            <con1:property propagates="true" key="defaultMode" type="java.lang.Boolean">true</con1:property>
+          </con1:properties>
+          <con1:attributes>
+            <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Interval</con1:property>
+          </con1:attributes>
+          <con1:addons/>
+        </con1:component>
+        <con1:component type="com.eviware.loadui.impl.component.generators.FixedVU" label="Fixed Load 2" id="13364139-886b-46db-9a13-4ab2adc036c7" category="Generators">
+          <con1:properties>
+            <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+            <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
+            <con1:property propagates="true" key="limitVU" type="java.lang.Long">9223372036854775807</con1:property>
+            <con1:property propagates="true" key="load" type="java.lang.Long">5</con1:property>
+            <con1:property propagates="true" key="interval" type="java.lang.Long">3000</con1:property>
+          </con1:properties>
+          <con1:attributes>
+            <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Fixed Load</con1:property>
+          </con1:attributes>
+          <con1:addons/>
+        </con1:component>
+        <con1:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="TestSuite 1:LoadTest 1" id="67975b44-9c66-4ceb-9a06-638e42a343f4" category="Runners">
+          <con1:properties>
+            <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+            <con1:property propagates="true" key="concurrentSamples" type="java.lang.Long">10000</con1:property>
+            <con1:property propagates="true" key="property_name_is_not_relevant_for_private_property" type="java.lang.Long">9223372036854775807</con1:property>
+            <con1:property propagates="true" key="maxQueueSize" type="java.lang.Long">1000</con1:property>
+            <con1:property propagates="true" key="countDiscarded" type="java.lang.Boolean">false</con1:property>
+            <con1:property propagates="true" key="disabledTestSteps" type="java.lang.String"/>
+            <con1:property propagates="true" key="_thinkTime" type="java.lang.Long">0</con1:property>
+            <con1:property propagates="true" key="ReadyApiTestCase" type="com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase">04bc96ce-2160-480c-9274-5b987514a0a9</con1:property>
+            <con1:property propagates="true" key="raiseError" type="java.lang.Boolean">true</con1:property>
+            <con1:property propagates="true" key="outputTestCaseProperties" type="java.lang.Boolean">true</con1:property>
+            <con1:property propagates="true" key="OutputLevel" type="java.lang.String">TestCase only</con1:property>
+            <con1:property propagates="true" key="closeConnectionsAfterRequest" type="java.lang.Boolean">false</con1:property>
+            <con1:property propagates="true" key="disableSoapuiAssertions" type="java.lang.Boolean">false</con1:property>
+            <con1:property propagates="true" key="forceShareDatasources" type="java.lang.Boolean">true</con1:property>
+          </con1:properties>
+          <con1:attributes>
+            <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Ready API TestCase Runner</con1:property>
+          </con1:attributes>
+          <con1:addons/>
+        </con1:component>
+        <con1:connection outputTerminalId="6a09d75d-9ad8-4a7d-83da-edbc23abd3d9/outgoingTerminal" inputTerminalId="13364139-886b-46db-9a13-4ab2adc036c7/stateTerminal"/>
+        <con1:connection outputTerminalId="13364139-886b-46db-9a13-4ab2adc036c7/triggerTerminal" inputTerminalId="67975b44-9c66-4ceb-9a06-638e42a343f4/triggerTerminal"/>
+        <con1:connection outputTerminalId="67975b44-9c66-4ceb-9a06-638e42a343f4/runningTerminal" inputTerminalId="13364139-886b-46db-9a13-4ab2adc036c7/Sample Count"/>
+      </con1:scene>
+      <con1:statistics>
+        <con1:page title="DefaultLoadUIStatisticPage"/>
+      </con1:statistics>
+    </con1:loadui-project>
+    <con:loadUITestScenario projectId="d40482e2-4b3e-4ce4-9c5f-6e7bd0798aea" scenarioId="a9836821-1b1b-46d9-bde8-04ab7eab29af" name="New Scenario" id="c7a8dba3-3683-4dfc-88f4-9ee127fddcaf">
+      <con:settings/>
+    </con:loadUITestScenario>
+    <con:setupScript>log.info "I am in setup"</con:setupScript>
+    <con:teardownScript>log.info "I am in TearDown"</con:teardownScript>
+    <con:reportParameters/>
+  </con:loadUiTest>
+  <con:tags/>
+</con:soapui-project>
